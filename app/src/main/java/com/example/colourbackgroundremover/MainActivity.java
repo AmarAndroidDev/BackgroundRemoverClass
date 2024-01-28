@@ -1,12 +1,9 @@
 package com.example.colourbackgroundremover;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
-import android.app.DownloadManager;
-import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.content.Context;
@@ -21,24 +18,14 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.provider.Settings;
-import android.util.Log;
 import android.view.View;
-import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.example.backgroundremoverclass.BackgroundListner;
 import com.example.backgroundremoverclass.BackgroundRemover;
 import com.github.ybq.android.spinkit.SpinKitView;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.button.MaterialButton;
-import com.google.mlkit.vision.common.InputImage;
-import com.google.mlkit.vision.segmentation.Segmentation;
-import com.google.mlkit.vision.segmentation.SegmentationMask;
 import com.google.mlkit.vision.segmentation.Segmenter;
-import com.google.mlkit.vision.segmentation.selfie.SelfieSegmenterOptions;
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.MultiplePermissionsReport;
 import com.karumi.dexter.PermissionToken;
@@ -51,8 +38,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
 import java.util.List;
-
-import yuku.ambilwarna.AmbilWarnaDialog;
 
 public class MainActivity extends AppCompatActivity {
 private MaterialButton image,camera;
@@ -130,7 +115,7 @@ private static final int IMAGE_CODE=200;
                 }).check();
 
         }
-  remover  =new BackgroundRemover(MainActivity.this, new BackgroundListner() {
+  remover  =new BackgroundRemover(MainActivity.this, new BackgroundRemover.BackgroundListner() {
             @Override
             public void onSuccess(Bitmap bitmap) {
                 runOnUiThread(new Runnable() {

@@ -72,5 +72,8 @@ public class BackgroundRemover {
         buffer.rewind();
         return image;
     }
-
+    public interface BackgroundListner {
+        public void onSuccess(Bitmap bitmap);
+        public void onFailure(Exception error);
+    }
 }
