@@ -24,6 +24,26 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+/*    publishing {
+        publications {
+            maven(MavenPublication) {
+                groupId = 'com.example.backgroundremoverclass'
+                artifactId = 'Backgroundremoverclass'
+                version = '1.0.1'
+artifacts ("$buildDir/output/aar/BackgroundRemoverClass-release.aar")
+                from components.java
+            }
+        }
+
+        repositories {
+            name "GithubPackages"
+            url url("https://github.com/AmarAndroidDev/Background_Remover")
+            credentials{
+                username=System.getenv(("GITHUB_USER"))
+                password=System.getenv(("GITHUB_TOKEN"))
+            }
+        }
+    }*/
 }
 
 dependencies {
@@ -35,3 +55,4 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
+
