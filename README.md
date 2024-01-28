@@ -70,7 +70,7 @@ Step 1. Add the JitPack repository to your build file
 
 Step-2. Add the dependency in build.gradle
 
-    dependencies { implementation 'com.github.AmarAndroidDev:Colour-Background-Remover-App:1.0.0' } 
+    dependencies { implementation 'com.github.AmarAndroidDev:Background_Remover:1.0.0' } 
 ## Demo
 ![Screenshot_2024-01-28-11-55-58-69_4c9ad60d90dfa5dd0501e88ee962b11a](https://github.com/AmarAndroidDev/ColourBackground_Remover/assets/135800230/db6849ec-ad06-4921-a2ad-9c39652eca65)
 
