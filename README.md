@@ -72,6 +72,7 @@ Step-2. Add the dependency in build.gradle
 
     dependencies { implementation 'com.github.AmarAndroidDev:Colour-Background-Remover-App:1.0.0' } 
 ## Demo
+![IMG_20240127_230310](https://github.com/AmarAndroidDev/ColourBackground_Remover/assets/135800230/457c577a-fff5-4e6b-bdb0-23aff332bced)
 
 Insert gif or link to demo
 https://www.veed.io/view/c7e3ff66-1a48-4cfa-8b5e-e6db41f18d88?panel=share&sharingWidget=true[README (1).md](https://github.com/AmarAndroidDev/ColourBackground_Remover/files/14075153/README.1.md)
